@@ -1,6 +1,7 @@
+require("dotenv").config();
 const express = require("express");
 const multer = require("multer");
-require("dotenv").config();
+
 const uploadFile = require("./services/storage.service.js");
 const app = express();
 app.use(express.json());
